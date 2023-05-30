@@ -1,0 +1,10 @@
+{
+	"name": "gerev",
+	"image": "milunka/devcontainer-gerev:0.0.1",
+
+	"features": {
+		"ghcr.io/devcontainers/features/nvidia-cuda:1": {}
+	},
+	"runArgs": ["--gpus", "all"],
+    "postCreateCommand": "pip3 install -r ./app/requirements.txt"
+}
